@@ -3,7 +3,7 @@
 
 - Strategy 策略模式 , 委托（delegate）
 - Observer 观察者模式，建立一对多依赖，更新时会收到通知。
-- Decorator 装饰者模式
+- Decorator 装饰者模式，装饰者和被装饰者对象有相同的超类型，使用时将对象传进去然后动态地添加值，装饰过后其类型依旧不变。
 - Abstract Factory
 - Factory Method  工厂模式
 - Singleton 单件模式
