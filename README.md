@@ -4,8 +4,16 @@
 - Strategy 策略模式 , 委托（delegate）
 - Observer 观察者模式，建立一对多依赖，更新时会收到通知。
 - Decorator 装饰者模式，装饰者和被装饰者对象有相同的超类型，使用时将对象传进去然后动态地添加值，装饰过后其类型依旧不变。
-- Abstract Factory
-- Factory Method  工厂模式
+- Factory  工厂模式：
+
+工厂模式定义一个创建对象的接口，但是交由子类决定要实例化哪一个，对应的是抽象类PizzaStore里的抽象函数createPizza。
+
+抽象工厂模式提供一个接口，用于创建相关或依赖对象的家族，而不需要明确指定具体类。对应的是PizzaIngredientFactory这个接口，由NYPizzaIngredientFactory实现，在CheesePizza里的prepare()使用。
+
+区别：
+1. 工厂模式用来创建一个对象，抽象工厂模式用来创建一堆相关对象。
+2. 工厂模式（abstract class）需要扩展(extents)一个类，覆盖它的工厂方法，而抽象工厂模式是一个接口(interface)，通过对象的组合(implements)来实现。
+
 - Singleton 单件模式
 - Command
 - Adapter
@@ -17,6 +25,7 @@
 - Proxy
 
 ## 设计原则 
-- 针对接口编程
+- 针对接口编程。
+- 依赖抽象(抽象类或接口)，不要依赖具体类。
 
 
