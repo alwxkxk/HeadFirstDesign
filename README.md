@@ -14,7 +14,7 @@
 1. 工厂模式用来创建一个对象，抽象工厂模式用来创建一堆相关对象。
 2. 工厂模式（abstract class）需要扩展(extents)一个类，覆盖它的工厂方法，而抽象工厂模式是一个接口(interface)，通过对象的组合(implements)来实现。
 
-- Singleton 单件模式
+- Singleton 单例模式，相对于全局变量，能延时创建，并且还要考虑多线程创建时的问题。
 - Command
 - Adapter
 - Facade
