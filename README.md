@@ -15,7 +15,7 @@
 2. 工厂模式（abstract class）需要扩展(extents)一个类，覆盖它的工厂方法，而抽象工厂模式是一个接口(interface)，通过对象的组合(implements)来实现。
 
 - Singleton 单例模式，相对于全局变量，能延时创建，并且还要考虑多线程创建时的问题。
-- Command
+- Command 命令模式,将请求封装成对象，以便使用不同请求时、队列、日志来参数化其它对象，以及撤销功能。本质就是抽出新对象来统一实现execute与undo函数，然后统一调用这两个接口。
 - Adapter
 - Facade
 - Template Method
