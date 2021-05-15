@@ -23,7 +23,12 @@
 - Iterator 迭代器,实现iterator接口，有hasNext与next函数。
 - Composite 组合模式（代码与迭代器一起） 将对象组合成树形结构来表现“整体/部分”层次结构，能以一致的方式处理个别对象以及对象组合。
 - State 状态模式,允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类。将行为委托到当前状态。
-- Proxy
+- Proxy 代理模式（没完成）
+RMI：远程调用(remote invoke)，使用rmic能根据实现生成对应的stub和skeleton。
+xxxImpl(impl-> implement，代表实现，一般放到controller层的service下。)
+这里坑比较多，参考：
+https://www.cnblogs.com/lishuaiqi/p/11318228.html
+需要先用javac编译成class，然后根据包名放到对应的目录下，然后再执行rmic com.l.proxy.MyRemoteImpl才能生成
 
 ## 设计原则 
 - 针对接口编程。
